@@ -1,0 +1,8 @@
+[Unit]
+Description=System Health Monitor (one-shot)
+[Service]
+Type=oneshot
+ExecStart=/home/lenovo/csot-devops/project01/scripts/sysreport.sh
+User=lenovo
+StandardOutput=journal
+StandardError=journal

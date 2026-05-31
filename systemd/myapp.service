@@ -1,0 +1,17 @@
+[Unit]
+Description=CSOT Demo App
+After=network.target
+
+[Service]
+Type=simple
+User=lenovo
+WorkingDirectory=/home/lenovo/csot-devops/project01/myapp
+ExecStart=/usr/bin/python3 /home/lenovo/csot-devops/project01/myapp/server.py
+Restart=on-failure
+RestartSec=3
+Environment=PORT=8000
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

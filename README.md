@@ -1,6 +1,7 @@
-# Linux System Automation & DevOps Portfolio Piece
+# CSOT-DevOps Week01 Project
 
-A unified DevOps infrastructure workspace combining automated system telemetry monitoring, user management pipelines, and a production-tier web application deployment stack. Designed to run seamlessly across local Linux environments, WSL, or standalone server blocks.
+
+A unified DevOps infrastructure workspace combining automated system telemetry monitoring (Build 1), user management pipelines, and a production-tier web application deployment stack (Build 2). Designed to run on Linux environments, WSL, or standalone server blocks.
 
 ---
 
@@ -10,7 +11,6 @@ The environment maps out a classic decoupled network footprint:
 
 * **Edge Routing Layer:** Nginx acts as a high-performance Reverse Proxy facing public internet traffic on ports 80/443, handling SSL terminating tasks, and dropping diagnostic health endpoints (`/health`).
 * **Application Service:** An isolated background Python HTTP server supervised natively via `systemd` daemon threads listening internally on a loopback socket (`127.0.0.1:8000`).
-* **Secure Tunneling (Optional):** Integrated Cloudflare Outbound Tunnel pipeline bypassing strict firewalls without requiring exposed public IP ports.
 
 ---
 

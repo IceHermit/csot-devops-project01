@@ -21,7 +21,6 @@ The environment maps out a classic decoupled network footprint:
 ├── DEMO.md                   # Raw terminal execution output logs for verification metrics
 ├── .gitignore                # Restricts system binaries (.deb), logs, and secret files (.env)
 ├── .env.example              # Template environmental deployment flag configurations
-├── LICENSE                   # Open-source MIT distribution rights framework
 │
 ├── myapp/
 │   └── server.py             # Micro Python API endpoint engine (CSOT Demo App)
